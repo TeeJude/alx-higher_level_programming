@@ -14,7 +14,7 @@ The Python code will be saved in the environment variable $PYCODE
 
 2-print.py - Write a Python script that prints exactly "Programming is like building a multilingual puzzle, followed by a new line.
 
-- Use the function print
+Use the function print
 
 
 
@@ -27,6 +27,7 @@ The Python code will be saved in the environment variable $PYCODE
 - You are not allowed to cast the variable number into a string
 - Your code must be 3 lines long
 - You have to use f-strings tips
+
 
 
 4-print_float.py - Complete the source code in order to print the float stored in the variable number with a precision of 2 digits.
@@ -125,9 +126,12 @@ The output filename has to be $PYFILEc (ex: export PYFILE=my_main.py => output f
 
 102-magic_calculation.py - Write the Python function def magic_calculation(a, b): that does exactly the same as the following Python bytecode:
 
+
   3           0 LOAD_CONST               1 (98)
               3 LOAD_FAST                0 (a)
               6 LOAD_FAST                1 (b)
               9 BINARY_POWER
              10 BINARY_ADD
              11 RETURN_VALUE
+
+- Tip: Python bytecode
