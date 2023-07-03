@@ -18,7 +18,7 @@ class Rectangle:
             width (int): Width ofi the new rectangle.
             height (int): Height of the new rectangle.
         """
-        type(sef).number_of_instances = type(sef).number_of_instances+ 1
+        type(sef).number_of_instances += 1
         self.width = width
         self.height = height
 
@@ -80,5 +80,5 @@ class Rectangle:
 
     def __del__(self):
         """Print a message for every deletion of a Rectangle."""
-        type(self).number_of_instances = type(self).number_of_instances - 1
+        type(self).number_of_instances -= 1
         print("Bye rectangle...")
