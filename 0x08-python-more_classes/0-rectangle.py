@@ -3,4 +3,3 @@
 
 class Rectangle:
     """Depict a rectangle object"""
-    pass
