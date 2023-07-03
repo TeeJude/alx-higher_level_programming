@@ -10,8 +10,8 @@ class Rectangle:
         print_symbol (anytype): Symbol used for string representation.
     """
 
-    print_symbol = "#"
     number_of_instances = 0
+    print_symbol = "#"
 
     def __init__(self, width=0, height=0):
         """Initializes a new rectangle.
