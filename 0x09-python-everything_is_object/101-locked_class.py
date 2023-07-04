@@ -1,3 +1,6 @@
 #!/usr/bin/python3
-class LockedClass()
-__slot__ = ["first_name"]
+"""Define a class called LockedClass"""
+
+
+class LockedClass:
+    __slot__ = ["first_name"]
