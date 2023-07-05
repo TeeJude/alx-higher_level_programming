@@ -77,10 +77,10 @@ class Rectangle:
     def __repr__(self):
         """Return string representation of rectangle to create instance."""
         rec = "Rectangle(" + str(self.__width)
-        rec += ", " + str(self.__height) + ")"
+        rec = rec + ", " + str(self.__height) + ")"
         return (rec)
 
     def __del__(self):
         """Print a message for every deletion of a rectangle."""
-        type(self).number_of_instances = 1type(self).number_of_instances - 1
+        type(self).number_of_instances = type(self).number_of_instances - 1
         print("Bye rectangle...")
