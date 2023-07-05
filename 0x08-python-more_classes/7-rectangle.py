@@ -77,7 +77,7 @@ class Rectangle:
     def __repr__(self):
         """Return string representation of rectangle to create instance."""
         rec_diag = "Rectangle(" + str(self.__width)
-        rec_diag = rec_dig + ", " + str(self.__height) + ")"
+        rec_diag = rec_diag + ", " + str(self.__height) + ")"
         return (rec_diag)
 
     def __del__(self):
