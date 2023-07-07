@@ -7,7 +7,7 @@ def text_indentation(text):
     """Print texts with two new lines after these characters '.', '?', and ':'.
 
     Args:
-        text (string): The text to print.
+        text (string): Text to print.
     Raises:
         TypeError: If text is not a string.
     """
