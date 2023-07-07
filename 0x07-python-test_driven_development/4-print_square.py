@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 # 4-print_square.py
-"""Defines a square-printing function."""
 
+"""Defines a square-printing function."""
 
 def print_square(size):
     """Print a square with the # character.
@@ -20,4 +20,3 @@ def print_square(size):
     for i in range(size):
         [print("#", end="") for j in range(size)]
         print("")
-
