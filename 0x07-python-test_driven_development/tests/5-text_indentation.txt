@@ -1,0 +1,57 @@
+# 5-text_indentation.txt
+
+Usage of 5-text_indentation.py
+================================
+
+This module defines a text-indentation function ``text_indentation(text)``.
+
+Text is printed with two lines after each of these characters ``.``, ``?``,
+and ``:``.
+
+    >>> text_indentation = __import__('5-text_indentation').text_indentation
+    >>> text_indentation("Hello there.")
+    Hello there.
+    <BLANKLINE>
+
+There should be no space printed at the beginning and at the end of a line.
+
+    >>> text_indentation("   How are you?")
+    How are you?
+    <BLANKLINE>
+
+    >>> text_indentation("How are you?   ")
+    How are you?
+    <BLANKLINE>
+
+    >>> text_indentation("    Excuse me.    Are you okay?   ")
+    Excuse me.
+    <BLANKLINE>
+    Are you okay?
+    <BLANKLINE>
+
+
+New line escape characters are treated as new line within the string.
+
+    >>> text_indentation("A new \n line.")
+    A new 
+    line.
+    <BLANKLINE>
+
+
+Invalid Text
+============
+
+The ``text`` parameter must be a string and should be within quotation marks
+else, a TypeError is raised.
+
+    >>> text_indentation(4)
+    Traceback (most recent call last):
+    TypeError: text must be a string
+
+    >>> text_indentation(None)
+    Traceback (most recent call last):
+    TypeError: text must be a string
+
+    >>> text_indentation({"Segun": 24, "Bola": 14})
+    Traceback (most recent call last):
+    TypeError: text must be a string
