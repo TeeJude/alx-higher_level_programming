@@ -2,7 +2,6 @@
 # 5-text_indentation.py
 """Defines a text_indentation function."""
 
-
 def text_indentation(text):
     """Print text with two new lines after these '.', '?', and ':' characters.
 
@@ -28,4 +27,3 @@ def text_indentation(text):
                 t += 1
             continue
         t += 1
-
