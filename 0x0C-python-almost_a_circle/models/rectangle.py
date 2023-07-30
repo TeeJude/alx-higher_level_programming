@@ -4,16 +4,16 @@ from models.base import Base
 
 
 class Rectangle(Base):
-    """Represent a rectangle."""
+    """Represents a rectangle."""
 
     def __init__(self, width, height, x=0, y=0, id=None):
-        """Initialize a new Rectangle.
+        """Initializes a new Rectangle.
 
         Args:
             width (int): The width of the new Rectangle.
             height (int): The height of the new Rectangle.
-            x (int): The x coordinate of the new Rectangle.
-            y (int): The y coordinate of the new Rectangle.
+            x (int): The x dimension of the new Rectangle.
+            y (int): The y dimension of the new Rectangle.
             id (int): The identity of the new Rectangle.
         Raises:
             TypeError: If either of width or height is not an int.
@@ -80,11 +80,11 @@ class Rectangle(Base):
         self.__y = value
 
     def area(self):
-        """Return the area of the Rectangle."""
+        """Returns the area of the Rectangle."""
         return self.width * self.height
 
     def display(self):
-        """Print the Rectangle using the `#` character."""
+        """Prints the Rectangle using the `#` character."""
         if self.width == 0 or self.height == 0:
             print("")
             return
@@ -96,15 +96,15 @@ class Rectangle(Base):
             print("")
 
     def update(self, *args, **kwargs):
-        """Update the Rectangle.
+        """Updates the Rectangle.
 
         Args:
             *args (ints): New attribute values.
-                - 1st argument represents id attribute
-                - 2nd argument represents width attribute
-                - 3rd argument represent height attribute
-                - 4th argument represents x attribute
-                - 5th argument represents y attribute
+                - 1st argument depicts id attribute
+                - 2nd argument depicts width attribute
+                - 3rd argument depicts height attribute
+                - 4th argument depicts x attribute
+                - 5th argument depicts y attribute
             **kwargs (dict): New key/value pairs of attributes.
         """
         if args and len(args) != 0:
@@ -142,7 +142,7 @@ class Rectangle(Base):
                     self.y = v
 
     def to_dictionary(self):
-        """Return the dictionary representation of a Rectangle."""
+        """Returns the dictionary representation of a Rectangle."""
         return {
             "id": self.id,
             "width": self.width,
@@ -152,7 +152,7 @@ class Rectangle(Base):
         }
 
     def __str__(self):
-        """Return the print() and str() representation of the Rectangle."""
+        """Returns the print() and str() representation of the Rectangle."""
         return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id,
                                                        self.x, self.y,
                                                        self.width, self.height)
